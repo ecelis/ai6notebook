@@ -21,6 +21,18 @@
   * [Word2Vec tutorial - The skip-gram model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
   * [Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
   * [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
+  * [Adversarial examples for evaulating Reading Comprenhension Systems](https://arxiv.org/pdf/1707.07328.pdf)
+    - [CodaLab worksheet](https://worksheets.codalab.org/worksheets/0xc86d3ebe69a3427d91f9aaa63f7d1e7d/)
+    - [Github repository](https://github.com/robinjia/adversarial-squad)
+  * [Google's trained Word2Vec model in Python](http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/)
+  * [Word2Vec tutorial](https://rare-technologies.com/word2vec-tutorial/)
+  * [Deep learning with word2vec](https://radimrehurek.com/gensim/models/word2vec.html)
+
+
+### NLP Datasets
+
+  * [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
+  * [Google Word2Vec](https://code.google.com/archive/p/word2vec/)
 
 
 
