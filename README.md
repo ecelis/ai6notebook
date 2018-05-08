@@ -3,8 +3,9 @@
 
 ## Basic knowledge
 
-  * [Python + Numpy](https://github.com/kuleshov/cs228-material)
+  * [Basic Algebra](https://en.wikibooks.org/wiki/Basic_Algebra)
   * [Linear Algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+  * [Python + Numpy](https://github.com/kuleshov/cs228-material)
 
 
 ## Natural Language Processing
@@ -33,6 +34,7 @@
 
   * [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
   * [Google Word2Vec](https://code.google.com/archive/p/word2vec/)
+  * [Spanish Billion Words Corpus](http://crscardellino.me/SBWCE/)
 
 
 
@@ -51,6 +53,13 @@
 * [Enhanced BPNN with added
   momentum](https://github.com/ecelis/ai6notebook/blob/master/Excercises/Simple%20Neural%20Network2%20with%20Numpy.ipynb)
 * [BPNN with configurable TFs](https://github.com/ecelis/ai6notebook/blob/master/Excercises/Simple%20Neural%20Network3%20with%20Numpy.ipynb)
+
+
+## AI in the Cloud
+
+* http://playground.tensorflow.org
+* https://www.crestle.com/
+* https://www.paperspace.com (from $0.40/hr)
 
 
 ## Links
