@@ -28,6 +28,8 @@
   * [Google's trained Word2Vec model in Python](http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/)
   * [Word2Vec tutorial](https://rare-technologies.com/word2vec-tutorial/)
   * [Deep learning with word2vec](https://radimrehurek.com/gensim/models/word2vec.html)
+  * [The Stanford NLP Group](https://nlp.stanford.edu/)
+  * [NLP for hackers](https://nlpforhackers.io/)
 
 
 ### NLP Datasets
@@ -35,6 +37,7 @@
   * [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
   * [Google Word2Vec](https://code.google.com/archive/p/word2vec/)
   * [Spanish Billion Words Corpus](http://crscardellino.me/SBWCE/)
+  * [Catalan, Spanish, and English portions of the Wikipedia](http://www.lsi.upc.edu/~nlp/wikicorpus/)
 
 
 
@@ -74,3 +77,9 @@
 * [AI6 Slack](https://aisaturdays.slack.com)
 * [AI6](https://nurture.ai/ai-saturdays)
 * [MLNotebook](https://mlnotebook.github.io/)
+* [Understanding Machine Learning: From Theory to Algorithms](http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/)
+
+
+## Utils
+
+* [Draw network diagrams with matplotlib](https://gist.github.com/dvgodoy/0db802cfb8edd488dfbd524302ca4be7)
