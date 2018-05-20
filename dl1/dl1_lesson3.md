@@ -4,10 +4,17 @@
 * [Wiki](http://forums.fast.ai/t/wiki-lesson-3/9401)
 
 
+## Questions
+
+* What about `lrs = np.array([lr/9,lr/3,lr])` ?
+* Custom metrics?
+* Resize to 128 for planet?
+
+
 ## Links
 
 * [Decoding the ResNet architecture](http://teleported.in/posts/decoding-resnet-architecture/)
-* [Hiromi Suenaga's lesson 2 notes](https://medium.com/@hiromi_suenaga/deep-learning-2-part-1-lesson-3-74b0ef79e56)
+* [Hiromi Suenaga's lesson 3 notes](https://medium.com/@hiromi_suenaga/deep-learning-2-part-1-lesson-3-74b0ef79e56)
 
 
 ## Notes
@@ -117,7 +124,7 @@ Shortest wasy to get a prediction:
   3x3 in deep learning) and multiply every element of that matrix by
   every element of 3x3 section of an image and add them all together to
   get the result of that convolution at one point.
-  - [Visual understanding of Deep Learning](https://youtu.be/9C06ZPF8Uuc?t=49m51s)
+  - [![Visual understanding of Deep Learning](htps://img.youtube.com/vi/Oqm9vsf_hvU/0.jpg)](https://youtu.be/Oqm9vsf_hvU?t=752 "Visual understanding of Deep Learning")
   - [Convolution on Exel](https://docs.google.com/spreadsheets/d/1kkUTVzKE1Xmi24MadQDszBIHXagH8_YYMUSC4Pvwqec/edit?usp=sharing)
 
 * **Filter/Kernel** is a 3x3 slice of a 3D tensor used for convolution.
@@ -131,6 +138,24 @@ Shortest wasy to get a prediction:
 * **Fully connected layer** Gives a weight to each and every single
   activation and calculate the sum product. Weight matrix is as big as
   the entire input.
+
+* Using small size images for satellite or medicine imagery is works
+  better than for example images that are similar to ImageNet data set.
+  - By using small size 64x64 will make details to be easir to analyze.
+  - By resizing we destroy all pre-calculated weights. Wouldn’t do this
+    for cats and dogs, because it starts off nearly perfect. If we
+    resized, we destroy the model. Most ImageNet models are designed around
+    224 which was close to the normal.
+  - In the lesson Jeremy didn't use images more than image size 1.3, go
+    ahead and make new jpg where the smallest edge is x size. So this
+    will save a lot of time for processing. In general the image resize will
+    take a center
+    crop.
+
+* `learn.summary()` returns a dictionary which represents the model.
+
+* When trying with very small data sets, make the batch size really
+  small, something like 4 or so.
 
 * Data
   - Unstructured — Audio, images, natural language text where all of
@@ -148,3 +173,16 @@ Shortest wasy to get a prediction:
 
 * `fastai.column_data` — allows us to do Fast.ai and PyTorch stuff with
   columnar structured data.
+
+* You should always consider feature extraction step when working with
+  date-time. Without expanding your date-time into these additional
+  fields, you can't capture any trend/cyclical behavior as a function of
+  time at any of these granularities. We'll add to every table with a date
+  field.
+
+* It is common when working with time series data to extract data that
+  explains relationships across rows as opposed to columns, e.g.:
+  - Running averages
+  - Time until next event
+  - Time since last even
+

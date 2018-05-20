@@ -3,11 +3,8 @@
 * [Lecture](https://youtu.be/JNxcznsrRb8)
 * [Wiki](http://forums.fast.ai/t/wiki-lesson-2/9399)
 
-    lr = np.array([1e-4,1e-3,1e-2])
 
 ## Questions
-
-val_idxs what triggers exactly?
 
 
 ## Links
@@ -20,7 +17,9 @@ val_idxs what triggers exactly?
 * Convolutional neural network have these things called “activations.”
   An activation is a number that says “this feature is in this place
   with this level of confidence (probability)”
+
 * `models` directory, h5 saved files
+
 * The learning rate determines how quickly or how slowly you want to
   update the weights (or parameters). Learning rate is one of the most
   difficult parameters to set, because it significantly affect model
@@ -32,23 +31,30 @@ val_idxs what triggers exactly?
   - The method `learn.lr_find()` helps you find an optimal learning rate. It
     uses the technique developed in the 2015 paper [Cyclical Learning Rates
     for Training Neural Networks](http://arxiv.org/abs/1506.01186)
+
 * We first create a new learner, since we want to know how to set the
   learning rate for a new (untrained) model.
+
 * Our learn object contains an attribute `sched` that contains our learning
   rate scheduler, and has some convenient plotting functionality.
   `learn.sched.plot_lr()` and `learn.sched.plot()`
+
 * By default when we create a learner, it sets all but the last layer to
   frozen. That means that it's still only updating the weights in the last
   layer when we call fit.
+
 * Mini-batch is a set of few images we look at each time so that we are
   using the parallel processing power of the GPU effectively (generally
   64 or 128 images at a time)
+
 * Overfitting — the model is starting to see the specific details of the
   images in the training set rather than learning something general that
   can be transferred across to the validation set
+
 * _Data augmentation_, every epoch, we will randomly change the image a
   little bit. In other words, the model is going to see slightly
   different version of the image each epoch.
+
 * If you try training for more epochs, you'll notice that we start to
   overfit, which means that our model is learning to recognize the
   specific images in the training set, rather than generalizing such that
@@ -77,6 +83,7 @@ val_idxs what triggers exactly?
   - there is a parameter called `cycle_save_name` which you can add as
     well as `cycle_len`, which will save a set of weights at the end of
     every learning rate cycle and then you can ensemble them.
+
 * Data uagmentation is done by passing `aug_tfms` (augmentation
 transforms) to `tfms_from_model`, with a list of functions to apply that
 randomly change the image however we wish. For photos that are largely
@@ -85,18 +92,23 @@ photos taken from the top down, such as satellite imagery) we can use
 the pre-defined list of functions transforms_side_on. We can also
 specify random zooming of images up to specified scale by adding the
 `max_zoom` parameter.
+
 * Another trick is adding the `cycle_mult` parameter.
+
 * A common way to analyze the result of a classification model is to use a
   [confusion matrix](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/).
   Scikit-learn has a convenient function we can use for this purpose.
+
 * “frozen” layer is a layer which is not being trained/updated.
   `learn.unfreeze()` unfreezes all the layers.
+
 * `learn.TTA()` “Test Time Augmentation”. What this means is that we are
   going to take 4 data augmentations at random as well as the
   un-augmented original (center-cropped). We will then calculate
   predictions for all these images, take the average, and make that our
   final prediction. Note that this is only for validation set and/or test
   set.
+
 * In order to train the model, data needs to be organized in a certain
   way (example below uses dogs vs cats data set).
 
@@ -152,19 +164,18 @@ The last layer of the model needs to be replaced with the layer of the
 right dimensions. The pretained model was trained for 1000 classes
 therfore the final layer predicts a vector of 1000 probabilities.
 
-Parameters are learned by fitting a model to the data. Hyperparameters
-are another kind of parameter, that cannot be directly learned from the
-regular training process. These parameters express “higher-level”
-properties of the model such as its complexity or how fast it should
-learn. Two examples of hyperparameters are the learning rate and the
-number of epochs.
+**Parameters are learned by fitting a model to the data**.
+**Hyperparameters** are another kind of parameter, that **cannot be
+directly learned from the regular training process**. These parameters
+express “higher-level” properties of the model such as its complexity or
+how fast it should learn. Two examples of hyperparameters are the
+learning rate and the number of epochs.
 
-During iterative training of a neural network, a batch or mini-batch is
-a subset of training samples used in one iteration of Stochastic
-Gradient Descent (SGD). An epoch is a single pass through the entire
-training set which consists of multiple iterations of SGD.
+During iterative training of a neural network, a **batch or mini-batch
+is a subset of training samples used in one iteration of Stochastic
+Gradient Descent (SGD)**. An **epoch is a single pass through the entire
+training set which consists of multiple iterations of SGD**.
 
 We can now fit the model; that is, use gradient descent to find the best
 parameters for the fully connected layer we added, that can separate cat
 pictures from dog pictures.
-

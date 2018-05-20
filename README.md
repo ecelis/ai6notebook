@@ -75,13 +75,13 @@
 * [Website](https://www.researchgate.net/project/Theories-of-Deep-Learning)
 
 
-## Excercises
+## (Jupyter) Notebooks
 
-* [Simple Transfer Functions (TFs)](https://github.com/ecelis/ai6notebook/blob/master/Excercises/Simple%20Transfer%20Functions.ipynb)
-* [Simple Back Propagation Neural Network with Numpy (BPNN)](https://github.com/ecelis/ai6notebook/blob/master/Excercises/Simple%20Neural%20Network%20with%20Numpy.ipynb)
+* [Simple Transfer Functions (TFs)](https://github.com/ecelis/ai6notebook/blob/master/notebooks/Simple%20Transfer%20Functions.ipynb)
+* [Simple Back Propagation Neural Network with Numpy (BPNN)](https://github.com/ecelis/ai6notebook/blob/master/notebooks/Simple%20Neural%20Network%20with%20Numpy.ipynb)
 * [Enhanced BPNN with added
-  momentum](https://github.com/ecelis/ai6notebook/blob/master/Excercises/Simple%20Neural%20Network2%20with%20Numpy.ipynb)
-* [BPNN with configurable TFs](https://github.com/ecelis/ai6notebook/blob/master/Excercises/Simple%20Neural%20Network3%20with%20Numpy.ipynb)
+  momentum](https://github.com/ecelis/ai6notebook/blob/master/notebooks/Simple%20Neural%20Network2%20with%20Numpy.ipynb)
+* [BPNN with configurable TFs](https://github.com/ecelis/ai6notebook/blob/master/notebooks/Simple%20Neural%20Network3%20with%20Numpy.ipynb)
 
 
 ## AI in the Cloud
@@ -89,6 +89,7 @@
 Resources to access GPU computing power in the cloud (usually for a
 fee).
 
+* [Google Colaboratory](https://colab.research.google.com/)
 * [crestle.com](https://www.crestle.com/)
 * [paperspace.com](https://www.paperspace.com)
 
@@ -100,6 +101,7 @@ fee).
 * [AI6 Forums](https://ai6forums.nurture.ai)
 * [AI6 Slack](https://aisaturdays.slack.com)
 * [AI6](https://nurture.ai/ai-saturdays)
+* [FastAI's Intro to Machine Learning](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826)
 * [MLNotebook](https://mlnotebook.github.io/)
 * [Understanding Machine Learning: From Theory to Algorithms](http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/)
 
