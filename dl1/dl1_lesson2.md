@@ -10,7 +10,11 @@
 ## Links
 
 * [**ERROR:** TypeError: torch.max received an invalid combination of arguments - got (numpy.ndarray, dim=int)](http://forums.fast.ai/t/lesson1-ipynb-error-typeerror-torch-max-received-an-invalid-combination-of-arguments-got-numpy-ndarray-dim-int/10707/3?u=ecelis)
+
+* [**ERROR:** Missing pretrained models, like resnext_50_32xd.pth](http://files.fast.ai/models/weights.tgz)
+
 * [Hiromi Suenaga's lesson 2 notes](https://medium.com/@hiromi_suenaga/deep-learning-2-part-1-lesson-2-eeae2edd2be4)
+
 
 ## Notes
 
