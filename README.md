@@ -17,9 +17,9 @@
 #### Notes
 
   - [Lesson 1 - Introduction to Image
-    Recognition](courses/dl1/dl1_lesson1.md)
-  - [Lesson 2 - Convolutional Neural Networks](courses/dl1/dl1_lesson2)
-  - [Lesson 3 - Overfitting](courses/dl1/dl1_lesson3)
+    Recognition](dl1/dl1_lesson1)
+  - [Lesson 2 - Convolutional Neural Networks](dl1/dl1_lesson2)
+  - [Lesson 3 - Overfitting](dl1/dl1_lesson3)
 
 
 ## UCL/Deep Reinforcement Learning
